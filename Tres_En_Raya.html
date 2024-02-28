@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Tres_En_Raya.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <section id="juego" class="grid-container">
+        <h1 id="UltimoGanador"></h1>
+        <p id="turno">Empiezan circulos</p>
+        <div id="tablero">
+            <div class="casilla" ondrop="drop(event)" data-posicion="0" ondragover="allowDrop(event)"></div>
+            <div class="casilla" ondrop="drop(event)" data-posicion="1" ondragover="allowDrop(event)"></div>
+            <div class="casilla" ondrop="drop(event)" data-posicion="2" ondragover="allowDrop(event)"></div>
+            <div class="casilla" ondrop="drop(event)" data-posicion="3" ondragover="allowDrop(event)"></div>
+            <div class="casilla" ondrop="drop(event)" data-posicion="4" ondragover="allowDrop(event)"></div>
+            <div class="casilla" ondrop="drop(event)" data-posicion="5" ondragover="allowDrop(event)"></div>
+            <div class="casilla" ondrop="drop(event)" data-posicion="6" ondragover="allowDrop(event)"></div>
+            <div class="casilla" ondrop="drop(event)" data-posicion="7" ondragover="allowDrop(event)"></div>
+            <div class="casilla" ondrop="drop(event)" data-posicion="8" ondragover="allowDrop(event)"></div>
+        </div>
+        <div id="imagenes">
+            <img style="display: block;" id="circulo" src="img/circulo.png" draggable="true" ondragstart="drag(event)">
+            <img style="display: block;" id="cruz" src="img/cruz.png" draggable="true" ondragstart="drag(event)">
+        </div>
+    </section>
+    <script src="Tres_en_raya.js"></script>
+</body>
+</html>
+
